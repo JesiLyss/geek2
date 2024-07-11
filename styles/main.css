@@ -1,0 +1,235 @@
+body {
+  background: #e6f7ff; /* Fondo azul claro */
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Seccion Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #80c7d4; /* Azul suave */
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.container_encabezado {
+  display: flex;
+  align-items: center;
+}
+
+.titulo_encabezado {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.logo_encabezado {
+  width: 50px;
+  height: auto;
+}
+
+/* Main-Container */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Seccion mis productos */
+
+.mis-productos {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 2rem;
+}
+
+.products-container {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-y: auto;
+  max-height: 50vh;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  flex: 1 1 calc(33.333% - 1rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-container--info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.img-container {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+}
+
+.delete-button {
+  background-color: #ff6961; /* Rojo claro */
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.delete-button:hover {
+  background-color: #ff5c5c;
+}
+
+/* Seccion agregar productos */
+
+.agregar-productos {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-clear, .button-submit {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.button-clear {
+  background-color: #ddd;
+}
+
+.button-clear:hover {
+  background-color: #ccc;
+}
+
+.button-submit {
+  background-color: #80c7d4;
+  color: #fff;
+}
+
+.button-submit:hover {
+  background-color: #6bb2bd;
+}
+
+/* Seccion Footer */
+
+.footer {
+  background: #80c7d4;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.footer-container {
+  text-align: center;
+  color: #fff;
+}
+
+.footer-autor {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Seccion mobile */
+
+@media (max-width: 425px) {
+  .header, .footer {
+    padding: 1rem;
+  }
+
+  .titulo_encabezado {
+    font-size: 1.5rem;
+  }
+
+  .logo_encabezado {
+    width: 40px;
+  }
+
+  .products-container {
+    gap: 0.5rem;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+
+  .img-container {
+    max-width: 100px;
+  }
+
+  .agregar-productos {
+    max-width: 100%;
+  }
+}
+
+/* Seccion Responsive tablet */
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0.5rem;
+  }
+
+  .img-container {
+    max-width: 120px;
+  }
+
+  .products-container {
+    padding: 0.5rem;
+  }
+
+  .card {
+    flex: 1 1 48%;
+  }
+
+  .agregar-productos {
+    max-width: 90%;
+  }
+}

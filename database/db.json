@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "cac8",
+      "name": "Meowster",
+      "price": "$5000",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_730517-MLA74836046053_022024-O.webp"
+    },
+    {
+      "id": "0fd7",
+      "name": "schrodinger equation",
+      "price": "$8000",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_814438-MLA75021670208_032024-O.webp"
+    },
+    {
+      "id": "8756",
+      "name": "Cat Error 404 ",
+      "price": "$5000",
+      "image": "https://acdn.mitiendanube.com/stores/001/279/959/products/239-f307de779edcb2971517098361109665-480-0.jpg"
+    },
+    {
+      "id": "7720",
+      "name": "Catzilla",
+      "price": "$7000",
+      "image": "https://http2.mlstatic.com/D_976432-MLA75110660983_032024-C.jpg"
+    }
+  ]
+}
